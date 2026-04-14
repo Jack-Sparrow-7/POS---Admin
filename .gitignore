@@ -43,3 +43,7 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+POS_ADMIN_DEV_CHECKLIST.md
+POS_ADMIN_UI_SPEC.md
+POS_ADMIN_UX_FLOW.md
