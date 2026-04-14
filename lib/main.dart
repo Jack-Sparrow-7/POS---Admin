@@ -1,7 +1,9 @@
-import 'package:flutter/widgets.dart';
+import 'package:flutter/material.dart';
+import 'package:pos_admin/screens/login_screen.dart';
+import 'package:pos_admin/theme/app_theme.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(AppTheme.mixLight(child: const MyApp()));
 }
 
 class MyApp extends StatelessWidget {
@@ -9,6 +11,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return MaterialApp(
+      theme: AppTheme.light(context),
+      debugShowCheckedModeBanner: false,
+      home: const LoginScreen(),
+    );
   }
 }
