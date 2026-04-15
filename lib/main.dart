@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:pos_admin/screens/login_screen.dart';
+import 'package:pos_admin/screens/main_screen.dart';
 import 'package:pos_admin/theme/app_theme.dart';
 
 void main() {
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       theme: AppTheme.light(context),
       debugShowCheckedModeBanner: false,
-      home: const LoginScreen(),
+      home: const MainScreen(),
     );
   }
 }

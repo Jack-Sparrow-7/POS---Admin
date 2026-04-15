@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+import 'package:lucide_icons_flutter/lucide_icons.dart';
 import 'package:mix/mix.dart';
-import 'package:pos_admin/components/box_styles.dart';
-import 'package:pos_admin/components/button_styles.dart';
+import 'package:pos_admin/styles/box_styles.dart';
+import 'package:pos_admin/styles/button_styles.dart';
 import 'package:pos_admin/styles/text_styles.dart';
 import 'package:pos_admin/theme/tokens.dart';
 
@@ -31,8 +32,8 @@ class _LoginScreenState extends State<LoginScreen> {
           style: BoxStyler().maxWidth(384).marginAll(16),
           child: Form(
             key: _formKey,
-            child: Column(
-              mainAxisAlignment: .center,
+            child: ColumnBox(
+              style: FlexBoxStyler.mainAxisAlignment(.center),
               children: [
                 bradingText('Branding'),
 
@@ -96,8 +97,8 @@ class _LoginScreenState extends State<LoginScreen> {
                                     padding: const EdgeInsets.only(right: 8.0),
                                     child: StyledIcon(
                                       icon: value
-                                          ? Icons.visibility_outlined
-                                          : Icons.visibility_off_outlined,
+                                          ? LucideIcons.eye
+                                          : LucideIcons.eyeOff,
                                       style: IconStyler()
                                           .size(20)
                                           .color($mutedFg()),
